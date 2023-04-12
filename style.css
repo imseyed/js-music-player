@@ -1,0 +1,117 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+html * {
+    font-family: "Sans", serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: url("https://fastly.picsum.photos/id/961/800/800.jpg?blur=5&hmac=MU9g5bGXS_n5ZjwxNg1sY49oh3F_8rywd34chkEEkN0");
+    background-size: cover;
+}
+#music-player {
+    display: grid;
+    backdrop-filter: blur(20px) saturate(150%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    height: 100%;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#header h1 {
+    margin: 0;
+}
+
+#album-art {
+    width: clamp(200px, 65%, 400px);
+    aspect-ratio: 1/1;
+    margin: auto;
+    border-radius: 50%;
+    background: url("https://picsum.photos/800/800");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#track-info {
+    margin-bottom: 20px;
+}
+
+#controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#controls button:focus {
+    outline: none;
+}
+
+#progress {
+    direction: ltr!important;
+    width: 60%;
+    height: 8px;
+    margin: 20px auto;
+    background-color: #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+#time-display {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+#time-display span {
+    width: 48%;
+}
+
+@media screen and (max-width: 480px) {
+    #progress {
+        width: 80%;
+    }
+}
+#controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#controls button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#controls button {
+    padding: 1.2%;
+    border-radius: 50%;
+    line-height: 35px;
+}
+#controls button i{
+    width: 30px;
+    aspect-ratio: 1/1;
+}
