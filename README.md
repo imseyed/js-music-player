@@ -20,5 +20,5 @@ Finally, I asked it to make it more beautiful by writing CSS codes. In order to 
 
 # Using project
 For use this repository, you just need to download files _(index.html,script.js,style.css)_ and replace your music by _song.mp3_.
-
+[Online preview](https://imseyed.github.io/js-music-player/)
 Any development and improvement is welcome.
